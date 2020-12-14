@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+    <head>
+        <title>Chat App</title>
+        <!--STYLESHEETS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Send Messages</h1>
+                <br>
+                <input id="name" class="form-control" placeholder="Name">
+                <br>
+                <textarea id="message" class="form-control" placeholder="Your Message Goes Here!"></textarea>
+                <br>
+                <button id="send" class="btn btn-success" onclick="buttonClick()">Send</button>
+            </div>
+            <div id="messages">
+            </div>
+        </div>
+        <!--SCRIPTS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="client-dist/socket.io.js"></script>
+        <script src="chat.js"></script>
+        
+    </body>
+</html>
